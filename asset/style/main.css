@@ -1,0 +1,174 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+body{
+    background: var(--preto);
+    color: white;
+    font-family: "Times New Roman",Times ,serif;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 0.3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color: var(--vermelho);
+}
+
+.bloodstan-img{
+    background: url("/asset/img/blood-hand2.png");
+    background-size: cover   ;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 0.3rem;
+}
+header nav a:hover{
+    color:#FFF;
+}
+
+/* ====================== MAIN FILME PRINCIPAL========================*/
+.filme-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/asset/img/xJFUzxOMfksl0tQ1dtYsftOL22n.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 2%;
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.botao{
+    font-size: 12px;
+    border: none;
+    padding: 15px 30px;
+    background: rgba(0,0,0,.50);
+    color: white;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preto);
+}
+
+.botoes i{
+    margin-right: 00.4rem;
+}
+
+.botao a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-carrosel{ 
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-nav{
+    margin-top:10px
+}
+
+/* =================== JANELA MODAL ====================*/
+
+.modal {
+    position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+  }
+
+  .modal:target {
+    opacity:1;
+	pointer-events: auto;
+  }
+.modal h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+  .modal > div {
+    width: 500px;
+    height: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background-color: var(--preto);
+    color:#fff;
+  }
+
+  .fechar {
+    background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+  }
+
+  
+  
+  .container-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
